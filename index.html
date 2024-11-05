@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div id="overlay" class="overlay"></div>
+    <nav>
+      <img class="logo" src="assets/images/logo.svg" />
+      <div class="nav-container">
+        <img
+          id="mobile-menu"
+          class="mobile-menu"
+          src="assets/images/icon-menu.svg"
+        />
+        <ul class="nav-links">
+          <li>
+            <a class="links" href="#">Home</a>
+          </li>
+          <li>
+            <a class="links" href="#">New</a>
+          </li>
+          <li>
+            <a class="links" href="#">Popular</a>
+          </li>
+          <li>
+            <a class="links" href="#">Trending</a>
+          </li>
+          <li>
+            <a class="links" href="#">Categories</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="grid-container">
+      <div class="main-grid-1">
+        <picture>
+          <source
+            srcset="assets/images/image-web-3-desktop.jpg"
+            media="(min-width: 850px)"
+          />
+          <source
+            srcset="assets/images/image-web-3-mobile.jpg"
+            media="(max-width: 849px)"
+          />
+          <img src="assets/images/image-web-3-desktop.jpg" />
+        </picture>
+      </div>
+      <div class="main-grid-2">
+        <h1>The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="main-grid-3">
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button>READ MORE</button>
+      </div>
+      <div class="main-grid-4">
+        <h2>New</h2>
+        <div class="new-questions-1">
+          <p class="que-title-1">Hydrogen VS Electric Cars</p>
+          <p class="que-1">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="new-questions-2">
+          <p class="que-title-2">The Downsides of AI Artistry</p>
+          <p class="que-2">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="new-questions-3">
+          <p class="que-title-3">Is VC Funding Drying Up?</p>
+          <p class="que-3">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="grid-article-container">
+      <div class="grid-articles">
+        <img src="assets/images/image-retro-pcs.jpg" />
+        <div class="grid-article-info">
+          <h2 class="article-num">01</h2>
+          <p class="article-title">Reviving Retro PCs</p>
+          <p class="article-que">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <div class="grid-articles">
+        <img src="assets/images/image-top-laptops.jpg" />
+        <div class="grid-article-info">
+          <h2 class="article-num">02</h2>
+          <p class="article-title">Top 10 Laptops of 2022</p>
+          <p class="article-que">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+      <div class="grid-articles">
+        <img src="assets/images/image-gaming-growth.jpg" />
+        <div class="grid-article-info">
+          <h2 class="article-num">03</h2>
+          <p class="article-title">The Growth of Gaming</p>
+          <p class="article-que">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <div id="sidebar-close" class="sidebar-close">
+        <img src="assets/images/icon-menu-close.svg" />
+      </div>
+      <ul class="side-link-container">
+        <li>
+          <a class="side-links" href="#">Home</a>
+        </li>
+        <li>
+          <a class="side-links" href="#">New</a>
+        </li>
+        <li>
+          <a class="side-links" href="#">Popular</a>
+        </li>
+        <li>
+          <a class="side-links" href="#">Trending</a>
+        </li>
+        <li>
+          <a class="side-links" href="#">Categories</a>
+        </li>
+      </ul>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Alveri-779">CodyK</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
